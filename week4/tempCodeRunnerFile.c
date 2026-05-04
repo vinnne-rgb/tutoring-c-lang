@@ -16,7 +16,7 @@ int main(void)
 
     while (1)
     {
-        scanf("%d", &x);
+        scanf_s("%d", &x);
         if (x == 0)
             break;
         printf("%d\n", x);

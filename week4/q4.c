@@ -12,7 +12,7 @@ int main(void) {
     freopen("q4out.txt", "w", stdout);
 
     char c;
-scanf(" %c", &c);
+scanf("%c", &c);
 for (char ch = 'a'; ch <= c; ch++)
     {
 	printf("%c ", ch);

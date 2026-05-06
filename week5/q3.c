@@ -11,11 +11,13 @@
 미리 작성되어 있는 srand() 코드는 수정하지 않는다.
 */
 
-void solution() {
+void solution() 
+{
     // TODO: 구현하기
 }
 
-int main() {
+int main() 
+{
     // 파일 입출력 설정
     freopen("q3in.txt", "r", stdin);
     freopen("q3out.txt", "w", stdout);

@@ -11,14 +11,23 @@ year가 윤년이면 1, 아니라면 0을 반환하는 함수 leap_year을 구�
 
 int leap_year(int year)
 {
-    // TODO: 구현하기
+	if (year % 400 == 0) return 1;
+	else if (year % 100 == 0) return 0;
+	else if (year % 4 == 0) return 1;
+	else return 0;
 }
 
-int main()
-{
-    // 파일 입출력 설정
-    freopen("q1in.txt", "r", stdin);
-    freopen("q1out.txt", "w", stdout);
+int main(void)
+  {
+	int n;
+	scanf_s("%d", &n); // year 개수 입력
 
-    return 0;
-}
+	for (int i = 0; i < n; i++)
+	  {
+		int year;
+		scanf_s("%d", &year);
+		printf("%d\n", leap_year(year));
+	  }
+
+	return 0;
+  }

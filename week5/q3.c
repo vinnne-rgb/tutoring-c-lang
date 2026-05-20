@@ -11,19 +11,29 @@
 미리 작성되어 있는 srand() 코드는 수정하지 않는다.
 */
 
-void solution() 
-{
-    // TODO: 구현하기
+void solution(int n) {
+    int arr[2];
+    for (int i = 0; i < n; i++) {
+        arr[0] = 1 + rand() % 100;
+        arr[1] = 1 + rand() % 100;
+
+        // 오름차순 정렬
+        if (arr[0] > arr[1]) {
+            int temp = arr[0];
+            arr[0] = arr[1];
+            arr[1] = temp;
+        }
+
+        printf("%d %d\n", arr[0], arr[1]);
+    }
 }
 
-int main() 
-{
-    // 파일 입출력 설정
-    freopen("q3in.txt", "r", stdin);
-    freopen("q3out.txt", "w", stdout);
-    srand(42);
+int main() {
+    int n;
+    scanf_s("%d", &n);
 
-    // TODO: 구현하기
+   
+    solution(n);
 
     return 0;
 }

@@ -10,19 +10,19 @@
 미리 작성되어 있는 srand() 코드는 수정하지 않는다.
 */
 
-void solution() 
-{
-    // TODO: 구현하기
+void solution(int n) {
+    for (int i = 0; i < n; i++) {
+        int r = 1 + rand() % 100; // 1~100 범위
+        printf("%d\n", r);
+    }
 }
 
-int main() 
-{
-    // 파일 입출력 설정
-    freopen("q2in.txt", "r", stdin);
-    freopen("q2out.txt", "w", stdout);
-    srand(42);
+int main() {
+    int n;
+    scanf_s("%d", &n); // 반복 횟수 입력
 
-    // TODO: 구현하기
+   
+    solution(n);
 
     return 0;
 }

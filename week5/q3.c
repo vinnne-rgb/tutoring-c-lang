@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #define _CRT_SECURE_NO_WARNINGS
@@ -29,6 +28,9 @@ void solution(int n) {
 }
 
 int main() {
+    freopen("q1in.txt", "r", stdin);
+    freopen("q1out.txt", "w", stdout);
+    
     int n;
     srand(42);
     scanf_s("%d", &n);

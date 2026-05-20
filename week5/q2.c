@@ -22,6 +22,8 @@ void solution(int n)
 int main()
 {
     srand(42);
+    freopen("q1in.txt", "r", stdin);
+    freopen("q1out.txt", "w", stdout);
 
     int n;
     solution(n);

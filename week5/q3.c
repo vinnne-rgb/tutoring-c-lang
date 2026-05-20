@@ -30,6 +30,7 @@ void solution(int n) {
 
 int main() {
     int n;
+    srand(42);
     scanf_s("%d", &n);
 
    

@@ -12,13 +12,13 @@ year가 윤년이면 1, 아니라면 0을 반환하는 함수 leap_year을 구�
 int leap_year(int year)
 {
 	if (year % 400 == 0) return 1;
-	else if (year % 100 == 0) return 0;
-	else if (year % 4 == 0) return 1;
-	else return 0;
+	if (year % 100 == 0) return 0;
+	if (year % 4 == 0) return 1;
+	return 0;
 }
 
 int main(void)
-  {
+{
 	int n;
 	scanf_s("%d", &n); // year 개수 입력
 
@@ -30,4 +30,4 @@ int main(void)
 	  }
 
 	return 0;
-  }
+}

@@ -10,18 +10,20 @@
 미리 작성되어 있는 srand() 코드는 수정하지 않는다.
 */
 
-void solution(int n) {
-    for (int i = 0; i < n; i++) {
+void solution(int n)
+{
+    for (int i = 0; i < n; i++)
+    {
         int r = 1 + rand() % 100; // 1~100 범위
         printf("%d\n", r);
     }
 }
 
-int main() {
-    int n;
-    scanf_s("%d", &n); // 반복 횟수 입력
+int main()
+{
+    srand(42);
 
-   
+    int n;
     solution(n);
 
     return 0;
